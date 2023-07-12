@@ -3,11 +3,11 @@ import Typewriter from "typewriter-effect";
 export default function NamePane() {
   let left = "<span style= 'color: #6BF178'>{ </span>";
   let name =
-    "<span style='color: #FFE74C'>jse</span><span style='color: #CFD2CD'>.</span><span style='color: #FF5964'>dev</span>";
+    "<span style='color: #FFE74C'> &gt jse</span><span style='color: #CFD2CD'>.</span><span style='color: #FF5964'>dev</span>";
   let right = "<span style= 'color: #6BF178'> }<span>";
   return (
     <>
-      <h1 className="text-4xl text-center">
+      <h1 className="text-5xl text-center">
         <Typewriter
           onInit={(typewriter) => {
             typewriter

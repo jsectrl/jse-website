@@ -1,21 +1,20 @@
 import { FaGithub, FaTumblr } from "react-icons/fa";
-
-function NavIcon({ icon }: { icon: any }) {
-  return (
-    <>
-      <div className="relative flex h-12 w-12 bg bg-green-500 items-center justify-center">
-        {icon}
-      </div>
-    </>
-  );
-}
+import { HexagonLink } from "./containers/hexagonIcon";
 
 export default function NavLinks() {
   return (
     <>
-      <div className="flex justify-evenly">
-        <NavIcon icon={<FaTumblr size="35" />} />
-        <NavIcon icon={<FaGithub size="35" />} />
+      <div className="flex justify-evenly h-12">
+        <HexagonLink
+          icon={<FaTumblr size={20} />}
+          activeLink={true}
+          link="https://github.com/jsectrl"
+        />
+        <HexagonLink
+          icon={<FaGithub size={20} />}
+          activeLink={true}
+          link="https://jsectrl.tumblr.com/"
+        />
       </div>
     </>
   );
