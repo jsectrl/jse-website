@@ -67,7 +67,7 @@ function Skills() {
   );
   return (
     <>
-      <ContentSection title="Skills" children={skillIcons} />
+      <ContentSection title="Skills">{skillIcons}</ContentSection>
     </>
   );
 }
