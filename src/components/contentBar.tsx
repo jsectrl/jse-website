@@ -19,7 +19,7 @@ function About() {
   );
   return (
     <>
-      <ContentSection title="About" children={description}></ContentSection>
+      <ContentSection title="About">{description}</ContentSection>
     </>
   );
 }
@@ -48,7 +48,7 @@ function Experience() {
   );
   return (
     <>
-      <ContentSection title="Experience" children={jobs} />
+      <ContentSection title="Experience">{jobs}</ContentSection>
     </>
   );
 }
