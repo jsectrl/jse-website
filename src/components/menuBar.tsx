@@ -18,7 +18,7 @@ function Navigation() {
   );
   return (
     <>
-      <div className="py-4 sm:py-8 sm:flex flex-grow items-center sm:visible hidden">
+      <div className="hidden md:flex md:flex-col md:flex-grow md:justify-center">
         {menu}
       </div>
     </>
@@ -28,7 +28,7 @@ function Navigation() {
 export default function Menu() {
   return (
     <>
-      <div className="w-full sm:h-screen sm:w-1/2 sm:sticky sm:top-0 sm:py-28 flex flex-col">
+      <div className="flex flex-col p-4 lg:w-1/2 lg:h-screen xl:p-28 lg:p-24 md:w-1/2 md:h-screen md:p-20 md:sticky md:top-0">
         <Logo />
         <Navigation />
         <Links />

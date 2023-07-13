@@ -29,7 +29,7 @@ function Languages() {
 export default function Technologies() {
   return (
     <>
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col lg:space-y-4 md:space-y-2 space-y-2 p-2">
         <Languages />
         <Frameworks />
       </div>

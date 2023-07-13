@@ -6,17 +6,20 @@ import Technologies from "./icons/technologies";
 function About() {
   const description = (
     <>
-      <p>
-        Hello! My name is Jose, and I am a college student studying Computer
-        Science and Visual Arts. I spend most of my time designing web
-        applications, and learning to use different technologies. Most recently,
-        I began playing with Android Studio and making interesting applications.
-      </p>
-      <br />
-      <p>
-        Outside of my studies, I enjoy storytelling in various forms, such as
-        reading books and watching TV/Movies.
-      </p>
+      <div className="p-2">
+        <p>
+          Hello! My name is Jose, and I am a college student studying Computer
+          Science and Visual Arts. I spend most of my time designing web
+          applications, and learning to use different technologies. Most
+          recently, I began playing with Android Studio and making interesting
+          applications.
+        </p>
+        <br />
+        <p>
+          Outside of my studies, I enjoy storytelling in various forms, such as
+          reading books and watching TV/Movies.
+        </p>
+      </div>
     </>
   );
   return (
@@ -69,9 +72,9 @@ function Skills() {
 function Projects() {
   const projectData = [
     {
-      projectName: "Project 1",
+      projectName: "Forest Fire Prediction Model",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate enim id elit auctor, eu ultricies augue vulputate. In consectetur augue orci, a lobortis mi vestibulum vitae. Etiam aliquet pellentesque sapien sed posuere. Quisque posuere neque ac nisi viverra, ac efficitur nisl ornare. Aliquam porta venenatis eros, ut dictum turpis pretium non. Mauris vitae turpis congue, porttitor neque vitae, sagittis nisl. Donec ut vestibulum lectus, et porttitor nunc",
+        "Designed a prediction model based on daily weather data from 1980 to 2019. The program was written in Python and used a random forest regressor model to estimate forest fire probability on a given day and expected damage in acres.",
       programmingLanguages: "JavaScript",
     },
     {
@@ -108,7 +111,7 @@ function Projects() {
 export default function Content() {
   return (
     <>
-      <div className="h-full w-full sm:w-1/2 sm:py-28 text-md">
+      <div className="flex flex-col lg:w-1/2 lg:py-20 md:w-1/2 md:py-16 lg:text-lg sm:text-md text-sm text-blue-200">
         <About />
         <Skills />
         <Experience />

@@ -36,9 +36,9 @@ export function HexagonIcon(props: HexagonIconProps) {
   let icon = (
     <>
       <div className="absolute top-0 left-0 flex justify-center w-16 h-16">
-        <Hexagon style={{ fill: "#A40E4C", stroke: "#83A0A0" }} />
+        <Hexagon style={{ fill: "#9893DA", stroke: "#A40E4C" }} />
       </div>
-      <div className="absolute top-0 left-0 flex justify-center items-center w-16 h-16 text-pink-100">
+      <div className="absolute top-0 left-0 flex justify-center items-center w-16 h-16 text-purple-100">
         {props.icon}
       </div>
     </>

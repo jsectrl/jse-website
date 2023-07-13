@@ -8,12 +8,12 @@ export default function Links() {
         <HexagonLink
           icon={<FaTumblr size={20} />}
           activeLink={true}
-          link="https://github.com/jsectrl"
+          link="https://jsectrl.tumblr.com/"
         />
         <HexagonLink
           icon={<FaGithub size={20} />}
           activeLink={true}
-          link="https://jsectrl.tumblr.com/"
+          link="https://github.com/jsectrl"
         />
       </div>
     </>

@@ -9,7 +9,7 @@ export default function ContentSection(props: ContentSectionProps) {
   const sectionId = props.title.toLowerCase();
   return (
     <>
-      <section id={sectionId} className="mt-8 scroll-mt-28">
+      <section id={sectionId} className="lg:mt-8 mt-4 scroll-mt-24">
         {props.children}
       </section>
     </>

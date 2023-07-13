@@ -14,7 +14,6 @@ module.exports = {
       },
       colors: {
         vanilla: "#F6F5AE",
-        yellow: "#F5F749",
         vermillion: "#F24236",
         gray: {
           100: "#283845", // Light Gray (Accents)
@@ -22,12 +21,24 @@ module.exports = {
         },
         green: {
           100: "#8DE969", // Link Color
+          200: "#00A9A5",
         },
         purple: {
           100: "#A40E4C",
         },
         pink: {
-          100: "#F5D6BA",
+          100: "#F9CFF2",
+          200: "#E76B74",
+        },
+        blue: {
+          100: "#70A288",
+          200: "#93B7BE",
+        },
+        yellow: {
+          100: "#E6C229",
+        },
+        red: {
+          100: "#EA526F",
         },
       },
       fontFamily: {

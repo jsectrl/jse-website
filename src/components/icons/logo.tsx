@@ -11,8 +11,10 @@ export default function Logo() {
     <>
       <div className={bebas.className}>
         <div className="flex flex-col py-4">
-          <h1 className="text-m text-center">{introduction}</h1>
-          <h1 className="text-7xl tracking-tight text-center">
+          <h1 className="text-center lg:text-lg md:text-md text-green-100">
+            {introduction}
+          </h1>
+          <h1 className="tracking-tight text-center xl:text-7xl lg:text-6xl text-5xl text-blue-200">
             <Typewriter
               options={{ loop: true }}
               onInit={(typewriter) => {
@@ -20,7 +22,9 @@ export default function Logo() {
               }}
             />
           </h1>
-          <h1 className="text-lg text-center">{bio}</h1>
+          <h1 className="text-center lg:text-lg md:text-md text-green-100">
+            {bio}
+          </h1>
         </div>
       </div>
     </>
