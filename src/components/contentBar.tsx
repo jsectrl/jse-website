@@ -90,12 +90,11 @@ function Projects() {
   var projects = (
     <>
       {projectData.map((project) => (
-        <div>
-          <ProjectContainer
-            projectName={project.projectName}
-            projectDescription={project.description}
-          />
-        </div>
+        <ProjectContainer
+          projectName={project.projectName}
+          projectDescription={project.description}
+          key={project.projectName}
+        />
       ))}
     </>
   );
