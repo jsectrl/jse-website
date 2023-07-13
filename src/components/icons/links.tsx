@@ -1,7 +1,7 @@
 import { FaGithub, FaTumblr } from "react-icons/fa";
-import { HexagonLink } from "./containers/hexagonIcon";
+import { HexagonLink } from "../containers/hexagonIcon";
 
-export default function NavLinks() {
+export default function Links() {
   return (
     <>
       <div className="flex justify-evenly h-12">

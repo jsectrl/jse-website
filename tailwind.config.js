@@ -17,11 +17,11 @@ module.exports = {
         yellow: "#F5F749",
         vermillion: "#F24236",
         gray: {
-          100: "#283845",
-          200: "#202C39",
+          100: "#283845", // Light Gray (Accents)
+          200: "#202C39", // Dark Gray (Background)
         },
         green: {
-          100: "#8DE969",
+          100: "#8DE969", // Link Color
         },
         purple: {
           100: "#A40E4C",
@@ -29,6 +29,9 @@ module.exports = {
         pink: {
           100: "#F5D6BA",
         },
+      },
+      fontFamily: {
+        logo: ["Bebas Neue", "sans-serif"],
       },
     },
   },

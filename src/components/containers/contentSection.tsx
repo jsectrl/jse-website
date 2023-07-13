@@ -6,10 +6,10 @@ interface ContentSectionProps {
 }
 
 export default function ContentSection(props: ContentSectionProps) {
+  const sectionId = props.title.toLowerCase();
   return (
     <>
-      <section className="my-4">
-        <h2 className="text-lg font-bold text-yellow">{props.title}</h2>
+      <section id={sectionId} className="mt-8 scroll-mt-28">
         {props.children}
       </section>
     </>
