@@ -106,21 +106,16 @@ function Projects() {
 }
 
 function Footer() {
+  const foo =
+    "Built with Next.js and Tailwind CSS, deployed in AWS. Inspired by Brittany Chiang's design.";
   const footer = (
     <>
       <div className="p-2 text-green-200">
-        <p>
-          Built with Next.js and Tailwind CSS, deployed in AWS. Inspired by
-          Brittany Chiang's design.
-        </p>
+        <p>{foo}</p>
       </div>
     </>
   );
-  return (
-    <>
-      <div>{footer}</div>
-    </>
-  );
+  return <>{footer}</>;
 }
 
 export default function Content() {
