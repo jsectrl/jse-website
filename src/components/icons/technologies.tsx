@@ -1,10 +1,11 @@
 import { HexagonIcon } from "../containers/hexagonIcon";
 import { FaJs, FaJava, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
+import { BiLogoCPlusPlus } from "react-icons/bi";
 
 function Frameworks() {
   return (
     <>
-      <h2 className="uppercase font-semibold">Frameworks</h2>
+      <h2 className="uppercase font-semibold text-green-100">Frameworks</h2>
       <div className="flex justify-evenly flex-wrap my">
         <HexagonIcon icon={<FaReact size={30} />} activeLink={false} link="" />
         <HexagonIcon icon={<FaNodeJs size={30} />} activeLink={false} link="" />
@@ -16,11 +17,18 @@ function Frameworks() {
 function Languages() {
   return (
     <>
-      <h2 className="uppercase font-semibold">Programming Languages</h2>
+      <h2 className="uppercase font-semibold  text-green-100">
+        Programming Languages
+      </h2>
       <div className="flex justify-evenly flex-wrap">
         <HexagonIcon icon={<FaJs size={30} />} activeLink={false} link="" />
         <HexagonIcon icon={<FaJava size={30} />} activeLink={false} link="" />
         <HexagonIcon icon={<FaPython size={30} />} activeLink={false} link="" />
+        <HexagonIcon
+          icon={<BiLogoCPlusPlus size={30} />}
+          activeLink={false}
+          link=""
+        />
       </div>
     </>
   );

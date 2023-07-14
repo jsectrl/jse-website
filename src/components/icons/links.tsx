@@ -1,4 +1,4 @@
-import { FaGithub, FaTumblr } from "react-icons/fa";
+import { FaGithub, FaTumblr, FaLinkedin } from "react-icons/fa";
 import { HexagonLink } from "../containers/hexagonIcon";
 
 export default function Links() {
@@ -14,6 +14,11 @@ export default function Links() {
           icon={<FaGithub size={20} />}
           activeLink={true}
           link="https://github.com/jsectrl"
+        />
+        <HexagonLink
+          icon={<FaLinkedin size={20} />}
+          activeLink={true}
+          link="linkedin.com/in/jose-garcia-04bbb3172"
         />
       </div>
     </>

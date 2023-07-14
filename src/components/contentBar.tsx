@@ -32,10 +32,11 @@ function About() {
 function Experience() {
   const jobExperience = [
     {
-      companyName: "Pear",
-      jobTitle: "Associate Sloth Research Assistant",
-      jobDates: "Jan 2020 - Jan 2021",
-      jobDescription: "Pretty self explanatory",
+      companyName: "Brown University",
+      jobTitle: "Relevant Coursework:",
+      jobDates: "",
+      jobDescription:
+        "Introduction to Object Oriented Programming; Software Engineering; Introduction to Computer Systems; Creating Web Applications",
     },
   ];
   var jobs = (
@@ -59,7 +60,6 @@ function Experience() {
 }
 
 function Skills() {
-  var skills = <></>;
   return (
     <>
       <ContentSection title="Skills">
@@ -72,31 +72,28 @@ function Skills() {
 function Projects() {
   const projectData = [
     {
-      projectName: "Forest Fire Prediction Model",
+      name: "Forest Fire Prediction Model",
+      brief: "Academic Project",
       description:
         "Designed a prediction model based on daily weather data from 1980 to 2019. The program was written in Python and used a random forest regressor model to estimate forest fire probability on a given day and expected damage in acres.",
       programmingLanguages: "JavaScript",
     },
     {
-      projectName: "Project 2",
+      name: "PayUp Application",
+      brief: "Personal Project - In Development",
       description:
-        "usce libero mi, lobortis vitae scelerisque vitae, molestie ac enim. Morbi ac leo sit amet ex gravida ornare ac at est. Nunc tristique pellentesque enim. In hac habitasse platea dictumst. Pellentesque congue cursus malesuada. Cras in posuere nisi.",
+        "Android application designed to list a person's recurring payments, such as mortgages, auto loan payments, subscriptions, etc. The app sends notifications to the user for imminent and past due payments.",
       programmingLanguages: "Java",
-    },
-    {
-      projectName: "Project 3",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate enim id elit auctor, eu ultricies augue vulputate. In consectetur augue orci, a lobortis mi vestibulum vitae. Etiam aliquet pellentesque sapien sed posuere. Quisque posuere neque ac nisi viverra, ac efficitur nisl ornare. Aliquam porta venenatis eros, ut dictum turpis pretium non. Mauris vitae turpis congue, porttitor neque vitae, sagittis nisl. Donec ut vestibulum lectus, et porttitor nunc",
-      programmingLanguages: "C++ and QT Creator",
     },
   ];
   var projects = (
     <>
       {projectData.map((project) => (
         <ProjectContainer
-          projectName={project.projectName}
+          projectName={project.name}
+          projectBrief={project.brief}
           projectDescription={project.description}
-          key={project.projectName}
+          key={project.name}
         />
       ))}
     </>
@@ -104,6 +101,24 @@ function Projects() {
   return (
     <>
       <ContentSection title="Projects">{projects}</ContentSection>
+    </>
+  );
+}
+
+function Footer() {
+  const footer = (
+    <>
+      <div className="p-2 text-green-200">
+        <p>
+          Built with Next.js and Tailwind CSS, deployed in AWS. Inspired by
+          Brittany Chiang's design.{" "}
+        </p>
+      </div>
+    </>
+  );
+  return (
+    <>
+      <div>{footer}</div>
     </>
   );
 }
@@ -116,6 +131,7 @@ export default function Content() {
         <Skills />
         <Experience />
         <Projects />
+        <Footer />
       </div>
     </>
   );
