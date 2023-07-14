@@ -111,7 +111,7 @@ function Footer() {
       <div className="p-2 text-green-200">
         <p>
           Built with Next.js and Tailwind CSS, deployed in AWS. Inspired by
-          Brittany Chiang's design.{" "}
+          Brittany Chiang's design.
         </p>
       </div>
     </>
